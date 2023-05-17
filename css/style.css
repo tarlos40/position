@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --color-light: #fff;
+    --color-dark: #222;
+    --color-dark-alpha: #22222299;
+    --font-righteous: 'Righteous', cursive;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-dark-alpha);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header__container {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-dark)
+}
+
+.header__container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--font-righteous);
+    color: var(--color-light)
+}
+
+.nav__container ul {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__container li {
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav__container li a {
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--font-righteous);
+    color: var(--color-light);
+}
+
+.carousel {
+    position: relative;
+    width: 626px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.slide {
+    width: 100%;
+}
+
+.home {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.rooms {
+    padding: 50px 0;
+}
+
+.room {
+    margin-bottom: 40px;
+}
+
+.room img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.facilities {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.facilities ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.facilities li {
+    margin-bottom: 10px;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
