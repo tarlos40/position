@@ -1,14 +1,96 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>HotelPrivago</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
+    <header class="header__container">
+        <h1 class="logo__content">HotelPrivago.com</h1>
+        <nav class="nav__container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quartos</a></li>
+                <li><a href="#">Utilidades</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <div class="carousel">
+            <div class="slide"><img src="https://img.freepik.com/vetores-gratis/banner-de-hotel-em-gradiente-com-foto_23-2148918442.jpg?size=626&ext=jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="https://img.freepik.com/vetores-gratis/banner-de-hotel-em-gradiente-com-foto_52683-62488.jpg?size=626&ext=jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="https://img.freepik.com/vetores-gratis/banner-de-hotel-plano-organico-com-foto_52683-62489.jpg?size=626&ext=jpg" alt="Slide 3"></div>
+        </div>
+
+        <section id="home" class="home">
+            <div class="container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Ocfmp2K_8yzD4fsqS4gOhyAMPS1Y3Vc2JQ&usqp=CAU" alt="">
+                <h2 style="font-family: var(--font-righteous);">Bem-vindo ao Hotel Privago</h2>
+                <p style="font-family: Monospace;">Experimente uma estadia luxuosa e relaxante</p>
+                <a href="#contact" class="button" style="font-family: var(--font-righteous);">Reserve agora</a>
+            </div>
+        </section>
+
+        <section id="rooms" class="rooms">
+            <div class="container">
+                <h2 style="font-family: var(--font-righteous);">Nossos Quartos</h2>
+                <div class="room">
+                    <img src="https://imagens-revista.vivadecora.com.br/uploads/2019/06/quarto-de-luxo-decoracao-quarto-de-casal-tapete-creme-casacor2016-e1559754873149.jpg" alt="Quarto de luxo">
+                    <h3 style="font-family: var(--font-righteous);">Quarto de Luxo</h3>
+                    <p style="font-family: Monospace;">Aprecie o conforto e o estilo em nossos quartos de luxo.</p>
+                    <a href="#" class="button">Detalhes</a>
+                </div>
+                <div class="pacotes">
+                    <img src="data:image/jpeg;base64,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" alt="Quarto familiar">
+                    <h3 style="font-family: var(--font-righteous);">Quarto Familiar</h3>
+                    <p style="font-family: Monospace;">Perfeito para famílias, com espaço amplo e comodidades adequadas.</p>
+                    <a href="#" class="button">Detalhes</a>
+                </div>
+            </div>
+        </section>
+    
+        <section id="facilities" class="facilities">
+            <div class="container">
+                <h2 style="font-family: var(--font-righteous);">Nossas Instalações</h2>
+                <ul>
+                    <li style="font-family: Monospace;">Piscina ao ar livre</li>
+                    <li style="font-family: Monospace;">Restaurante de classe mundial</li>
+                    <li style="font-family: Monospace;">Spa e centro de bem-estar</li>
+                    <li style="font-family: Monospace;">Salas de conferência</li>
+                    <li style="font-family: Monospace;">Serviço de quarto 24 horas</li>
+                    <li style="font-family: Monospace;">Wi-Fi gratuito</li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 style="font-family: Monospace;">Entre em Contato</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <textarea name="message" placeholder="Mensagem" required></textarea>
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 HotelPrivago. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
